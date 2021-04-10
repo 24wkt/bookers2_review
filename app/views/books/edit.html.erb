@@ -3,11 +3,11 @@
     <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
       <h1>Editing Book</h1>
       <%= form_with model: @book, local: true do |f| %>
-        <div class="field">
+        <div class="form-group">
           <label for="book_title">Title</label><br />
             <%= f.text_field :title %>
         </div>
-        <div class="field">
+        <div class="form-g">
           <label for="book_body">Opinion</label><br />
             <%= f.text_area :body %>
         </div>
