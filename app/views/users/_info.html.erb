@@ -1,0 +1,19 @@
+  <h2>User info</h2>
+    <table class="table">
+      <tr><%= attachment_image_tag user, :profile_image_id, :fill, 60, 60, fallback: "no_image.jpg" %></tr>
+      <tr>
+        <th>name</th>
+        <th><%= user.name %></th>
+      </tr>
+      <tr>
+        <th>introduction</th>
+        <th><%= user.introduction %></th>
+      </tr>
+    </table>
+
+
+      <%= link_to edit_user_path(user) do %>
+        <i class="fas fa-user-cog btn btn-outline-secondary btn-block edit_user_#{user.id}"></i>
+      <% end %>
+
+
